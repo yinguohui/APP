@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_bottom_text_normal">#ff847d7b</color>
+    <color name="main_bottom_text_select">#ff333333</color>
+    <color name="main_bottom_bg">#11000000</color>
+    <color name="main_content_bg">#10000000</color>
+    <color name="essence_tab_bg">#12000000</color>
+    <color name="essence_tab_text_color_normal">#ff847d7b</color>
+    <color name="essence_tab_text_color_press">#FF4081</color>
+    <!--登陆-->
+    <color name="login_text_color">@android:color/white</color>
+    <color name="login_button_color_normal">#DE6262</color>
+    <color name="login_button_color_press">#DD5858</color>
+
+    <color name="item_mine_text_color">#707070</color>
+    <color name="item_build_default_normal">@android:color/white</color>
+    <color name="item_build_default_press">#F6F6F6</color>
+
+
+    <color name="color_f8f8f8">#F8F8F8</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_f74e00">#F74E00</color>
+    <color name="color_transparent2e">#2E000000</color>
+    <color name="color_transparent00">#00000000</color>
+
+
+
+    <color name="colorBig">#333333</color>
+    <color name="colorSmall">#666666</color>
+    <color name="colorMid">#999999</color>
+    <color name="colorBlue">#1296db</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite_">#99eeeeee</color>
+    <color name="colorGary">#aaaaaa</color>
+    <color name="colorBg">#eeeeee</color>
+    <color name="colorBg2">#cccccc</color>
+    <color name="colorYellow">#EEAA00</color>
+    <color name="colorGray1">#999999</color>
+    <color name="colorGray2">#555555</color>
+    <color name="cp_alpha_gray">#CC646464</color>
+    <color name="radiobutton_color">#1296db</color>
+    <color name="shadow">#999999</color>
+    <color name="grayf9">#f9f9f9</color>
+
+    <color name="gray_gb">#dddddd</color>
+
+    <color name="grayc4">#c4c4c4</color>
+
+    <color name="graye3">#e3e7ee</color>
+
+    <color name="alipay">#00a5ff</color>
+
+    <color name="gray_e5">#e5e5e5</color>
+
+    <color name="black">#000000</color>
+    <color name="gray_text_light">#979797</color>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.example.ygh.app"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.example.ygh.app.pro.newpost.view.views.MyImageView
+            android:id="@+id/iv_movie"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginLeft="@dimen/margin_left_6_dp"
+            circle:civ_border_width="1dp"
+            circle:civ_border_color="@android:color/transparent"
+            circle:civ_border_overlay="true"
+            circle:civ_fill_color="@android:color/transparent"
+            android:src="@drawable/item_essence_header_default"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_essence_name_size"
+                android:textColor="@color/main_bottom_text_select"
+                android:text="标题"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="@dimen/margin_left_6_dp"
+                android:layout_marginRight="@dimen/margin_left_6_dp"/>
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_essence_name_size"
+                android:textColor="@color/main_bottom_text_select"
+                android:text="评分"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="@dimen/margin_left_6_dp"
+                android:layout_marginRight="@dimen/margin_left_6_dp"/>
+            <TextView
+                android:id="@+id/tv_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_essence_name_size"
+                android:textColor="@color/main_bottom_text_select"
+                android:text="导演"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="@dimen/margin_left_6_dp"
+                android:layout_marginRight="@dimen/margin_left_6_dp"/>
+            <TextView
+                android:id="@+id/tv_actors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_essence_name_size"
+                android:textColor="@color/main_bottom_text_select"
+                android:text="演员"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="@dimen/margin_left_6_dp"
+                android:layout_marginRight="@dimen/margin_left_6_dp"/>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/buytickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="13dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_wallet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="我的钱包"/>
+        <TextView
+            android:id="@+id/tv_addlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_left_10_dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="充值记录"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:orientation="vertical">
+        <TextView
+            android:padding="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:textSize="@dimen/dp_20"
+            android:text="当前余额"/>
+        <TextView
+            android:id="@+id/allmoney"
+            android:padding="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:textSize="@dimen/dp_20"
+            android:text="1.22元"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dip">
+
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/radio1"
+            style="@style/select_style"
+            android:tag="rd1"
+            android:text="20元" />
+
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/radio2"
+            style="@style/select_style"
+            android:tag="rd2"
+            android:text="50元" />
+
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/radio3"
+            style="@style/select_style"
+            android:tag="rd3"
+            android:text="100元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dip">
+
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/radio4"
+            style="@style/select_style"
+            android:tag="rd6"
+            android:text="200元" />
+
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/radio5"
+            style="@style/select_style"
+            android:tag="rd7"
+            android:text="300元" />
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/radio6"
+            style="@style/select_style"
+            android:tag="rd4"
+            android:text="500元" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/dp_10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60">
+            <RadioButton
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_50"
+                android:text="50元"/>
+            <RadioButton
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_50"
+                android:text="100元"/>
+            <RadioButton
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_50"
+                android:text="200元"/>
+                />
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/zhifubao_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="支付宝支付"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">影控</string>
+
+    <string name="main_essence_title">影控首页</string>
+    <string name="main_essence_text">首页</string>
+    <string name="main_mine_text">我</string>
+    <string name="main_newpost_text">影片</string>
+    <string name="main_attention_text">讨论</string>
+    <string name="main_mine_title_text">我的</string>
+    <string name="login_and_register_text">登录/注册</string>
+    <string name="login_phone_text">手机号</string>
+    <string name="login_password_text">密码</string>
+    <string name="login_yanzhengma_text">请输入验证码</string>
+    <string name="login_config_password_text">确认密码</string>
+    <string name="login_register_text">注册账号</string>
+    <string name="login_forget_password_text">忘记密码?</string>
+    <string name="login_quick_text">快速登录</string>
+    <string name="login_qq_text">QQ登录</string>
+    <string name="login_sina_text">微博登录</string>
+    <string name="login_tencent_text">腾讯微博</string>
+    <string name="login_login_text">登录</string>
+    <string name="login_forget_text">确定重置</string>
+    <string name="login_attention_register_text">注册</string>
+    <string name="activity_buy">确认订单</string>
+    <string name="ticket_buy">购买</string>
+
+    <array name="essence_video_tab">
+        <item>最近@dream@0</item>
+        <item>最火@dream@1</item>
+    </array>
+
+    <array name="newpost_video_tab">
+        <item>电影@dream@0</item>
+        <item>影院@dream@1</item>
+    </array>
+
+    <array name="attention_video_tab">
+        <item>订阅@dream@0</item>
+        <item>关注@dream@1</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--选择图片相关-->
+    <string name="select_picture_photograph">拍照</string>
+    <string name="select_picture_select_from_album">从相册选择</string>
+    <string name="select_picture_cancel">取消</string>
+
+</resources>

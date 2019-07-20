@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_mall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/cinema_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBig"
+        android:textSize="16sp"
+        android:text="电影院名字"/>
+    <TextView
+        android:id="@+id/mall_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cinema_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorBig"
+        android:textSize="16sp"
+        android:text="价格"/>
+    <TextView
+        android:id="@+id/cinema_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cinema_name"
+        android:textSize="14sp"
+        android:text="电影院地址"/>
+    <TextView
+        android:id="@+id/movie_mame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cinema_address"
+        android:textColor="@color/colorSmall"
+        android:textSize="16sp"
+        android:text="电影名"/>
+
+    <TextView
+        android:id="@+id/cinema_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_mame"
+        android:text="开始时间"
+        android:textColor="@color/colorMid"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/cinema_endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cinema_starttime"
+        android:layout_alignBaseline="@+id/cinema_starttime"
+        android:textColor="@color/colorSmall"
+        android:textSize="13sp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/movie_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cinema_endtime"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_bg_blue"
+        android:gravity="center"
+        android:text="几厅"
+        android:textColor="@color/colorBlue"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/movie_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/movie_address"
+        android:layout_alignBaseline="@id/movie_address"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_left_10_dp"
+        android:background="@drawable/text_bg_blue"
+        android:text="几排几座"
+        android:textColor="@color/colorBlue"
+        android:textSize="12sp" />
+    <Button
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/movie_address"
+        android:text="购买"
+        android:textSize="@dimen/sp_11"
+        android:id="@+id/bt_buy"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_banner"
+                android:layout_width="match_parent"
+                android:layout_height="168dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_banner"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/tv_hotMovie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="电影推荐"
+                    android:textColor="@color/colorBig"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rl_movie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_hotMovie"
+                    android:layout_marginLeft="12dp" />
+
+            </RelativeLayout>
+
+            <ViewFlipper
+                android:id="@+id/vf_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rl_hot"
+                android:autoStart="true"
+                android:flipInterval="5000"
+                android:inAnimation="@anim/anim_in"
+                android:outAnimation="@anim/anim_out" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vf_view"
+                android:background="@color/colorWhite" />
+
+            <LinearLayout
+                android:id="@+id/ll_nomore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_news"
+                android:background="@color/colorBg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_nomore" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="我是有底线的"
+                    android:textColor="#999999"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>
